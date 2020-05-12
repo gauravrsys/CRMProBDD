@@ -6,9 +6,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-					features= {"/media/gaurav/BA92AE4892AE0949/ReloadOne/CRMProBDD/src/main/java/feature/Contact.feature"}
+					features= {"/media/gaurav/BA92AE4892AE0949/ReloadOne/CRMProBDD/src/main/java/feature"}
 					,glue= {"stepDefinition"}
-					,format= {"pretty"}
+					,format= {"pretty","html:test-output"}
 					,dryRun= false
 					,monochrome= true
 					,strict= true

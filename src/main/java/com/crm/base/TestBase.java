@@ -56,9 +56,12 @@ public class TestBase {
 	}
 	
 	public static void tearDown() {
-		
-		driver.findElement(By.xpath("(//a[@class='topnavlink'])[3]")).click();
-		driver.quit();
+	
+			/*driver.switchTo().frame("mainpanel");
+			Utilities.StaticWait();
+			driver.findElement(By.xpath("(//a[@class='topnavlink'])[3]")).click();
+			Utilities.StaticWait();*/
+			driver.quit();
 	}
 
 }
